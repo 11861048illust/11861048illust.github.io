@@ -99,7 +99,7 @@ display: flex; を指定した要素の中(直下)の要素
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-top: 10vw;
 }
@@ -111,7 +111,7 @@ display: flex; を指定した要素の中(直下)の要素
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-top: 10vw;
 }
