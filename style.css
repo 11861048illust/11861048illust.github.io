@@ -91,7 +91,7 @@ display: flex; を指定した要素の中(直下)の要素
 に幅を指定する = 1カラムの幅となる
 */
 .works-flex-item {
-  width: 90%;
+  width: 80%;
 }
 
 
