@@ -71,7 +71,7 @@ works
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-top: 10vw;
 }
@@ -94,7 +94,6 @@ display: flex; を指定した要素の中(直下)の要素
 に幅を指定する = 1カラムの幅となる
 */
 .works-flex-item {
-  margin-top: 15vw;
   margin-bottom: 20vw;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +105,6 @@ display: flex; を指定した要素の中(直下)の要素
 
 
 .works-flex-item a {
-  margin-top: 15vw;
   margin-bottom: 20vw;
   margin-left: auto;
   margin-right: auto;
