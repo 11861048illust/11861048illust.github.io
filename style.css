@@ -92,7 +92,8 @@ display: flex; を指定した要素の中(直下)の要素
 */
 .works-flex-item {
   width: 80%;
-  position: center;
+  height: auto;
+  margin-top: 10vw;
 }
 
 
