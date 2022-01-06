@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+    font-family: fantasy, Hiragino Maru Gothic ProN;
+    background-color: #f2ebf2;
+    color: #453245;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+top (冒頭部分)
+==============================
+*/
+.top {
+  /* 画面いっぱいに広げる */
+  width: 100%;
+  height: 100vh;
+
+  /* div class="top" の中野要素を画面中央に配置する */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-item {
+  /* 中のテキストを画面中央に配置する */
+  text-align: center;
+    font-size: 3.5vw;
+}
+
+.top-item-title {
+    width: 100vw;
+}
+
+
+.soto-waku {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 24px dotted #ffffff;
+    pointer-events: none;
+}
+
+
+/*
+works
+==============================
+*/
+.works {
+  /* 幅を画面サイズの90%にする */
+  width: 90%;
+
+  /*
+  - 上下に10vw(画面サイズの10%)を設定する
+  - 左右は auto の余白にすることで画面の中央に配置する
+  */
+  margin-top: 15vw;
+  margin-bottom: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/*
+2カラムレイアウト - step.1
+- 親要素に display: flex;
+- 複数行の場合の回り込み指定 flex-wrap: wrap; を指定する
+*/
+.works-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*
+2カラムレイアウト - step.2
+display: flex; を指定した要素の中(直下)の要素
+に幅を指定する = 1カラムの幅となる
+*/
+.works-flex-item {
+  width: 48%;
+}
+
+
+.works-flex-item a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* hover / マウスがのったら、opacityで半透明にする */
+.works-flex-item a:hover {
+  opacity: 0.5;
+}
+
+.works-flex-item p {
+  margin-top: 0.2vw;
+  font-size: 2vw;
+}
+
+
+/*
+about
+==============================
+*/
+.about {
+  width: 90%;
+  margin: 10vw auto;
+}
+
+.about h2 {
+  font-size: 3vw;
+  font-weight: normal;
+  padding-bottom: 1vw;
+  border-bottom: 1px solid #453245;
+  margin-bottom: 2vw;
+}
+
+.about p {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+
+
+
+/*
+詳細ページ
+==============================
+*/
+.detail {
+  width: 90%;
+  margin: 5vw auto;
+
+  /* レイアウトの最大幅を1200pxにする */
+  max-width: 1200px;
+  text-align: center;
+}
+
+.detail h1 {
+  font-size: 3vw;
+}
+
+.detail p {
+  font-size: 2vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+}
+
+.detail img {
+  width: 60%;
+  height: auto;
+  margin-top: 10vw;
+}
+
+
+/*
+最初のページに戻るボタン
+==============================
+*/
+.back-to-home {
+  margin: 5vw auto;
+}
+
+/* ボタンぽい見た目にする */
+.back-to-home a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+    background: #b86ab6;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+}
+
+.back-to-home span {
+  color: #fff;
+  font-size: 1.5vw;
+}
